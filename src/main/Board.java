@@ -356,10 +356,10 @@ public class Board{
 
 			}
 		}
-		System.out.println(removeIndex.size());
+		
 		for(Number num: removeIndex){
 			fadeIn(disks.get((int)num));
-			disks.remove(num);
+			disks.remove((int)num);
 
 		}
 

@@ -7,10 +7,10 @@ import javafx.animation.AnimationTimer;
 import main.GameApplication;
 
 public class Physics {
+	
 	private static final double FRIC_CONSTANT=0.01;
 	private static String playerTurn="p1"; 
-	@SuppressWarnings("unused")
-	private static boolean turnOver=false;
+	
 
 	public static void moveDisk(double windowHeight, double windowWidth, ArrayList<Disk> disks){
 

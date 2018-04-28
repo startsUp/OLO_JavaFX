@@ -9,16 +9,13 @@ import javafx.scene.input.MouseEvent;
 
 
 public class ShootAction {
+	
 	private static long startTime;
-
-	public ShootAction() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public static void makeShootable(Disk disk, ArrayList<Disk> disks){
 		disk.setShootable(true);
 		disk.setOnMousePressed(e->{
-			System.out.println(true);
+			
 			startTime = System.currentTimeMillis();
 		});
 
@@ -44,11 +41,7 @@ public class ShootAction {
 					}});
 
 	}
-	public static double calculateAngle(double mouseInX, double mouseReX, double mouseInY, double mouseReY){
-		double angle = 0;
 
-		return angle;
-	}
 
 	public static List<Number> velVector(Disk disk, double x, double y, long deltaT){
 		ArrayList<Number> vector= new ArrayList<>();
@@ -65,12 +58,8 @@ public class ShootAction {
 	
 		return vector;
 	}
-	public static void calculateVelocity(){
 
-	}
 
-	public void move(){
-
-	}
+	
 
 }
