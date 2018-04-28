@@ -139,9 +139,12 @@ public class GameApplication extends Application {
 	}
 	public Image getInsImage(int num){
 		Image[] images = new Image[4];
-		images[0] = new Image("file:/C:/Shardool/ICS3U1/Game_FinalProject/images/firstIns.png");
-		images[1] = new Image("file:/C:/Shardool/ICS3U1/Game_FinalProject/images/secondIns.png");
-		images[2] = new Image("file:/C:/Shardool/ICS3U1/Game_FinalProject/images/thirdIns.png");
+		File i0 = new File("res/firstIns.png");
+		File i1 = new File("res/secondIns.png");
+		File i2 = new File("res/thirdIns.png");
+		images[0] = new Image(i0.toURI().toString());
+		images[1] = new Image(i1.toURI().toString());
+		images[2] = new Image(i2.toURI().toString());
 		return images[num];
 	}
 	public Label getLabelInstruction(int num){
